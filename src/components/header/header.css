@@ -1,0 +1,40 @@
+.encabezado{
+    background-color: #0f0f0f;
+    padding: 20px 0;
+}
+
+.encabezado--container{
+    width: 95vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.cajaSeleccion, i{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.cajaBusqueda{
+    background-color: #888888;
+    width: 16rem;
+    padding: .8rem;
+    border-radius: 22px;
+}
+
+#iconoBuscar{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#iconoBuscar::placeholder{
+    color: #fff;
+}
+
+.fotoUsuario {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+}
