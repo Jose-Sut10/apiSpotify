@@ -1,0 +1,54 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191414;
+    justify-content: center;
+}
+
+.contenidoLogin--container{
+    width: 90vw;
+    height: 90vh;
+    padding: 40px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.cajaLogin{
+    height: 100%;
+}
+
+.cajaLogin img{
+    width: 12rem;
+    margin-right: 2rem;
+}
+
+.cajaLogin h1{
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.btnLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btnLogin p{
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.btnLogin button{
+    width: 50%;
+    padding: 1.2rem;
+    background-color: #1D8954;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 
+    0px 0px 5px 5px rgba(235, 230, 230, 0.661),
+    0px 0px 5px 5px rgba(245, 245, 245, 0.398);
+}
