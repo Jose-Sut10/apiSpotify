@@ -13,6 +13,10 @@
     color: #fff;
     font-size: 2rem;
     font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
 }
 
 .cajaBusqueda{
@@ -37,4 +41,18 @@
     height: 3rem;
     border-radius: 50%;
     background-color: white;
+}
+
+.fotoUsuario--img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}  
+
+.bienvenida{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1.2rem;
 }

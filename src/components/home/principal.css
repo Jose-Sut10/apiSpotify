@@ -1,0 +1,21 @@
+main{
+    width: auto;
+}
+
+.listaMusicas{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.listaMusicas li{
+    border: 2px solid gray;
+    padding: 30px;
+    border-radius: 1rem;
+    background-color: gray;
+    cursor: pointer;
+}

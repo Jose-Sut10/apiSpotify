@@ -1,6 +1,6 @@
 import './header.css';
 
-const Header = ()=>{
+const Header = ({ profilePhoto, username })=>{
 
     return <header className="encabezado">
         <section className="encabezado--container flex">
@@ -16,10 +16,21 @@ const Header = ()=>{
 
             <div className="cajaUsuario">
                 <div className="fotoUsuario">
-
+                {profilePhoto ? (
+                    <img
+                        src={profilePhoto}
+                        alt="Foto de perfil"
+                        className="fotoUsuario--img"
+                    />
+                    ) : (
+                    <span>No hay foto</span>
+                    )}
                 </div>
             </div>
         </section>
+        <div className="bienvenida">
+            <h1>Bienvenido {username}</h1>
+        </div>
     </header>
 
 }
