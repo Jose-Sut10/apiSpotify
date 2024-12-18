@@ -113,7 +113,7 @@ const Home = () => {
     setCurrentTrack({ track, sound });  // Guardamos el estado de la canción en reproducción
   };
   
-
+/*
   const fetchPlaylistTracks = async (playlistId) => {
     setIsLoadingTracks(true);
     setError(null);
@@ -137,7 +137,7 @@ const Home = () => {
     } finally {
       setIsLoadingTracks(false);
     }
-  };
+  };*/
   
 
   return (
