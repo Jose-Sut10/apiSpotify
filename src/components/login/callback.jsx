@@ -13,6 +13,7 @@ const Callback = () => {
   useEffect(() => {
     const getAccessToken = async (code) => {
       try {
+        // Realiza una solicitud POST a la API de Spotify para obtener el token de acceso
         const response = await fetch("https://accounts.spotify.com/api/token", {
           method: "POST",
           headers: {
@@ -29,7 +30,7 @@ const Callback = () => {
         const data = await response.json();
 
         if (response.ok) {
-          console.log("Access Token:", data.access_token);
+          console.log("Token de acceso obtenido:", data.access_token);
           setToken(data.access_token); // Guarda el token en el contexto
           navigate("/home"); // Redirige al componente Home
         } else {
@@ -37,9 +38,12 @@ const Callback = () => {
         }
       } catch (error) {
         console.error("Error en la solicitud:", error);
+        // Manejo de errores: Puedes mostrar un mensaje al usuario o redirigir a una página de error
+        console.error("Error al redirigir al usuario. Verifica la configuración de rutas.");
       }
     };
 
+    // Obtiene el código de autorización de la URL
     const params = new URLSearchParams(window.location.search);
     const code = params.get("code");
 

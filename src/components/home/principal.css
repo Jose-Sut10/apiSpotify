@@ -1,5 +1,10 @@
 main{
     width: auto;
+    margin-bottom: 2rem;
+}
+
+body{
+    background-color: #191414;
 }
 
 .listaMusicas{
@@ -19,3 +24,80 @@ main{
     background-color: gray;
     cursor: pointer;
 }
+
+.listaIndivGrup{
+    width: 90vw;
+    margin: 10px auto;
+    color: white;
+}
+
+.listaIndivGrup h2{
+    font-size: 2rem;
+}
+
+.listaIndividual{
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.listaIndivGrup{
+    background: linear-gradient(180deg, #443085, rgba(45, 45, 45, 0.766));
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.listaIndivGrup li{
+    padding: 16px;
+    color: white;
+    border-radius: 15px;
+}
+
+.listaIndivGrup li i{
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.listaIndivGrup li:hover{
+    background-color: rgba(190, 190, 190, 0.594);
+    cursor: pointer;
+}
+
+.listaIndividual li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .cancionInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .albumImagen {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .cancionDetalles {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nombreCancion {
+    font-weight: bold;
+  }
+  
+  .nombreArtista {
+    font-size: 0.9em;
+    color: gray;
+  }
+  
+  .fa-play {
+    font-size: 20px;
+    margin-left: auto;
+    color: #1db954; /* Spotify color */
+  }
